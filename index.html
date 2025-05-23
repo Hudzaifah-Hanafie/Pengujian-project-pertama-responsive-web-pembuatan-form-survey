@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Nama: <input type="text" id="name" placeholder="Enter your name" required /></label>
+      <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter your email"required /></label>
+      <label for="age" id="number-label" class="age">Age: <input type="number" id="number" min="13" max="120" placeholder="Age" /></label>
+      <label class="role">Which option best describes your current role?
+        <select id="dropdown">
+          <option value="" disabled selected>Select your option</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer Not To Say</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <legend>Would you recommend freeCodeCamp to a friend?</legend>
+      <label>
+        <input type="radio" name="recommendation" class="inline" value="Definetly"/>Definetly
+      </label>
+      <label>
+        <input type="radio" name="recommendation" class="inline" value="Maybe"/>Maybe
+      </label>
+      <label class="recommendationNotSure">
+        <input type="radio" name="recommendation" class="inline" value="Not Sure"/>Not Sure
+      </label>
+      <legend>What would you like to see improved? (Check all that apply)</legend>
+      <label>
+        <input type="checkbox" value="front-end project" class="inline" />Front-End Projects
+      </label>
+      <label>
+        <input type="checkbox" value="back-end project" class="inline" />Backend-End Projects
+      </label>
+      <label>
+        <input type="checkbox" value="data visualization" class="inline" />Data Visualization
+      </label>
+      <label>
+        <input type="checkbox" value="challenges" class="inline" />Challenges
+      </label>
+      <label>
+        <input type="checkbox" value="open source community" class="inline" />Open Source Community
+      </label>
+      <label>
+        <input type="checkbox" value="gitter help rooms" class="inline" />Gitter help rooms
+      </label>
+      <label>
+        <input type="checkbox" value="videos" class="inline" />Videos
+      </label>
+      <label>
+        <input type="checkbox" value="city meetups" class="inline" />City Meetups
+      </label>
+      <label>
+        <input type="checkbox" value="wiki" class="inline" />Wiki
+      </label>
+      <label>
+        <input type="checkbox" value="forum" class="inline" />Forum
+      </label>
+      <label class="improvementAddCourse">
+      <input type="checkbox" value="additional courses" class="inline" />Additional Courses
+      </label>
+      <label for="comment">
+        Any comments or suggestions?
+        <textarea id="comment" rows="4"></textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
