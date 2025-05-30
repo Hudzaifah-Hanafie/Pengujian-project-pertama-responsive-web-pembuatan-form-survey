@@ -1,1 +1,2 @@
 # Pengujian-project-pertama-responsive-web-pembuatan-form-survey
+Seri pembelajaran sertifikasi responsive web design pada freecodecamp yang berisi pembuatan project pertama yaitu membuat form survey yang harus memenuhi semua user story yang ditentukan
